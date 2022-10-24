@@ -10,7 +10,6 @@ import StreamIcon from '@mui/icons-material/Stream';
 
 const Projects = () => {
 
-
     // const [state, setState] = useState('')
     const projects = [
         {
@@ -30,9 +29,9 @@ const Projects = () => {
             title: 'Gearbest clone',
             img: Gearbest,
             desc: 'A lifestyle store is a retail store selling a wide variety of product categories under a single brand. It is designed to associate a brand with one or another aspirational lifestyle. Lifestyle stores may include clothing, housewares,etc . Data is hosted on Json Server.',
-            worked: 'This is an individual project which is only created by me in 5 days.',
+            worked: 'This is an individual project completed in 5 days.',
             keyPoint1: 'local json server used',
-            keyPoint2: 'Professionally designed programs take the guesswork out of exercising.',
+            keyPoint2: '',
             githubLink: 'https://github.com/shekhar74/meek-calculator-9744',
             deployedLink: 'https://gearbestdotcom.vercel.app/',
             tags: ['HTML', 'CSS', 'Reactjs', 'Chakra-Ui']
@@ -42,7 +41,7 @@ const Projects = () => {
             title: 'ssense.com/en-in Clone',
             img: sensemen,
             desc: 'This website was created in a span of seven days. The Tech stack used is Html CSS javascript.Various UI like slideshow,cart, payment etc are eye-catching.javascript functionality like local storage, slide show with the help of set interval etc is used.',
-            worked: 'This is an individual project.',
+            worked: 'This is an individual project. It was completed in 4 days',
             keyPoint2: '',
             keyPoint1: '',
             githubLink: 'https://github.com/shekhar74/naive-plot-5053',
@@ -54,7 +53,7 @@ const Projects = () => {
     return (
         <Container id='projects'>
             <h1>Projects</h1>
-            <div className='projectsContainer'>
+            <div className='projectsContainer' >
                 {projects.map((ele, index) => (
                     <div key={index} className="box">
                         <div className='imgBox'>
@@ -90,7 +89,7 @@ const Container = styled.div`
     gap:20px;
     
     h1{
-        color:teal;
+        color:#343a40;
         text-transform:uppercase;
     }
 
@@ -109,7 +108,7 @@ const Container = styled.div`
         display:flex;
         gap:10px;
         margin-bottom:80px;
-        border: 10px solid #e9e9e9;
+        border: 10px solid lightgrey;
         border-radius: 20px;
         overflow:hidden;
     }
@@ -141,7 +140,7 @@ const Container = styled.div`
     }
 
     .ContentBox>h1{
-        color:#343a40;
+        color:teal;
     }
 
     .ContentBox>p{
@@ -162,7 +161,7 @@ const Container = styled.div`
 
     .tagsBox>span{
         color:white;
-        background-color:teal;
+        background-color:#222e50;
         padding: 2px 15px 2px 15px;
         border-radius:10px;
         font-size:13px;
@@ -205,7 +204,7 @@ const Container = styled.div`
     
 
     .linkSection>a:last-child>button{
-        background-color:#44a4be;
+        background-color:black;
         color: White;
         padding:8px 20px 8px 20px;
         border-radius:8px;

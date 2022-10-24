@@ -8,7 +8,6 @@ import mongodb from '../Resources/Images/LanguageImages/mongodb.png'
 import nodejs from '../Resources/Images/LanguageImages/nodejs.png'
 import react from '../Resources/Images/LanguageImages/react.png'
 import reactredux from '../Resources/Images/LanguageImages/redux.png'
-import mern from '../Resources/Images/LanguageImages/mern.png'
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -30,14 +29,6 @@ const Skills = () => {
             title:'Javascript'
         },
         {
-            img:git,
-            title:'Git/Github'
-        },
-        {
-            img:mongodb,
-            title:'MongoDB'
-        },
-        {
             img:nodejs,
             title:'NodeJS'
         },
@@ -46,21 +37,26 @@ const Skills = () => {
             title:'ReactJS'
         },
         {
-            img:reactredux,
-            title:'Redux'
+            img:git,
+            title:'Git/Github'
         },
         {
-            img:mern,
-            title:'MERN'
+            img:mongodb,
+            title:'MongoDB'
+        },
+        
+        {
+            img:reactredux,
+            title:'Redux'
         }
     ]
 
   
 
   return (
-    <Container id='skills' data-aos='flip-left'>
+    <Container id='skills' >
         <h1>Skills</h1>
-        <div className='skillsContainer'>
+        <div className='skillsContainer'data-aos='fade-right'>
             {skills.map((ele,index)=>(
                 <div key={index}>
                     <img src={ele.img} alt={ele.title} width='70px' height='70px'/>
@@ -77,7 +73,7 @@ const Container = styled.div`
     margin:auto;
     
     h1{
-        color:teal;
+        color:#343a40;
         text-transform:uppercase;
        
     }

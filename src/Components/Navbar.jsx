@@ -1,4 +1,3 @@
-import backgroundImage from '../Resources/Images/backgroundHome.jpeg'
 import styled from 'styled-components'
 import React, { useEffect, useState } from 'react'
 import {Link,animateScroll} from 'react-scroll';
@@ -51,7 +50,6 @@ const Container = styled.div`
     width:100%;
     height:70px;
     background-color:white;
-    // background-image: url(${backgroundImage});
 
     a {
         color: #000;
@@ -106,7 +104,7 @@ const Container = styled.div`
     }
 
     li a:hover{
-        color:red;
+        color:green;
         cursor:pointer;
     }
     

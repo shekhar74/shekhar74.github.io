@@ -10,7 +10,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 const About = () => {
    useEffect(() => {
-    Aos.init({duration:2000})
+    Aos.init({duration:1500})
    })
     
     return (
@@ -23,7 +23,7 @@ const About = () => {
                        className='typical'
               loop={Infinity}
 
-              steps={["I'm a Full Stack Web Developer", 1000,"I Build Amazing Websites!",500]}
+              steps={["I’m a FullStack Web Developer",1000,"I Build Amazing Websites!",500]}
 
             />
             <p>I’m a FullStack web developer. Focused on building products that will make people's lives better.I love to learn new things and I am always open to learn new technologies.</p>
@@ -120,7 +120,7 @@ const Container = styled.div`
         margin-top:10px;
         border-radius:10px;
         border:1px solid teal;
-        background:teal;
+        background:#23465a;
         color:white;
         display:flex;
         align-items:center;

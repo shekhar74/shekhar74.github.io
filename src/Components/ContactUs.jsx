@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components'
-import PhoneIcon from '@mui/icons-material/Phone';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -17,7 +17,7 @@ const ContactUs = () => {
     });
 
     useEffect(() => {
-        Aos.init({duration:2000})
+        Aos.init({duration:1500})
        })
 
 
@@ -65,29 +65,29 @@ const ContactUs = () => {
             <div className='contact'>
                 <div className='contactText'>
                     <div>
-                        <h1 style={{ color: 'teal' }}>Contact Me</h1>
+                        <h1 style={{ color: '#343a40' }}>Contact Me</h1>
                     </div>
                     <div className='middleSection'>
                         <div data-aos='fade-right'>
-                            <PhoneIcon fontSize="large" />
-                            <h1>Phone</h1>
-                            <p>Here is My Phone Number</p>
-                            <a href="tel:+91-9501861901" rel="noreferrer" target="_blank">
-                                <p>+91-9501861901</p>
+                            <GitHubIcon fontSize="large" />
+                            <h1>Github</h1>
+                            <p>Click on Link Below</p>
+                            <a href="https://github.com/shekhar74" rel="noreferrer" target="_blank">
+                                <p>https://github.com/shekhar74</p>
                             </a>
                         </div>
-                        <div  data-aos='fade-up'>
+                        <div  data-aos='fade-right'>
                             <EmailIcon fontSize="large"/>
                             <h1>Email</h1>
                             <p>You can Simply mail me just by clicking on my email</p>
                             <a href='mailto:shekhar74suman@gmail.com' rel="noreferrer" target="_blank"><p>shekhar74suman@gmail.com</p></a>
                         </div>
-                        <div data-aos='fade-left'>
-                            <LocationOnIcon fontSize="large" />
-                            <h1>Location</h1>
-                            <p>Deoghar, Jharkhand</p>
-                            <a href="https://www.google.com/maps/place/Deoghar,+Jharkhand/@24.4741375,86.6301659,12z/data=!3m1!4b1!4m5!3m4!1s0x39f116280f130f01:0xed8ba5a38d873e4b!8m2!3d24.485179!4d86.694785" rel="noreferrer" target="_blank">
-                                <p>View on Google map</p>
+                        <div data-aos='fade-right'>
+                            <LinkedInIcon fontSize="large" />
+                            <h1>LinkedIn</h1>
+                            <p>Here is my LinkedIn Link</p>
+                            <a href="https://www.linkedin.com/in/shekhar81/" rel="noreferrer" target="_blank">
+                                <p>https://www.linkedin.com/in/shekhar81/</p>
                             </a>
                         </div>
                     </div>
@@ -98,6 +98,7 @@ const ContactUs = () => {
                         <p>Thank you <span style={{ fontWeight: 'bold' }}>{data.name}</span>, your message has been submitted to us.</p>
                     </div>
                 </>}
+                <h1 style={{ color: '#343a40' }}>Drop Me a Message</h1>
                 <div className='contactForm'>
                     <form action="" onSubmit={handleSubmission}>
                         <div>
@@ -108,7 +109,7 @@ const ContactUs = () => {
                         <div>
                             <textarea value={submit?'':data.message} type="text" name='message' placeholder='Your Message' onChange={(e) => setData({ ...data, message: e.target.value })} />
                             <div>
-                                <button type='submit'  data-aos='flip-left'>Send Message</button>
+                                <button type='submit'  data-aos='zoom-in'>Send Message</button>
                             </div>
                         </div>
                     </form>
@@ -203,7 +204,7 @@ const Container = styled.div`
     }
 
     .contactForm>form>div:last-child>div>button{
-        background-color:teal;
+        background-color:black;
         color:white;
         border:none;
         padding:10px 20px 10px 20px;
