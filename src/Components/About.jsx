@@ -57,7 +57,7 @@ const About = () => {
                     </div>
                     <div className='right'>
                     
-                        <h2>I am a <span>MERN Stack Developer</span></h2>
+                        <h2>I am a <span>Full Stack Web Developer</span></h2>
                         <p>My name is Shekhar Suman, I am from Deoghar, Jharkhand.I am a passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.</p>
                     </div>
                 </div>

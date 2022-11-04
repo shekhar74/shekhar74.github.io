@@ -14,21 +14,21 @@ const Projects = () => {
     const projects = [
         {
             id: 1,
-            title: 'Dna-India Clone',
+            title: 'Dna-India',
             img: dnalp,
             desc: 'DNA India is an India-based online news website that covers all the latest and breaking news on Politics, Business, Sports, Bollywood, and Technology news.',
             worked: 'A collaborative project, built in 5 days by a team of 5 developers.',
             keyPoint2: 'This is our first project at Masai School.',
             keyPoint1: 'Group project',
             githubLink: 'https://github.com/sameerbhavar/dnaindia.com',
-            deployedLink: 'https://famous-dusk-ae2919.netlify.app/',
+            deployedLink: 'https://marvelous-dolphin-b7b476.netlify.app/',
             tags: ['HTML', 'CSS', 'Javascript']
         },
         {
             id: 2,
-            title: 'Gearbest clone',
+            title: 'Gearbest',
             img: Gearbest,
-            desc: 'A lifestyle store is a retail store selling a wide variety of product categories under a single brand. It is designed to associate a brand with one or another aspirational lifestyle. Lifestyle stores may include clothing, housewares,etc . Data is hosted on Json Server.',
+            desc: 'A lifestyle store is a retail store selling a wide variety of product categories under a single brand. It is designed to associate a brand with one or another aspirational lifestyle. Lifestyle stores may include clothing, housewares,etc.',
             worked: 'This is an individual project completed in 5 days.',
             keyPoint1: 'local json server used',
             keyPoint2: '',
@@ -38,9 +38,9 @@ const Projects = () => {
         },
         {
             id: 3,
-            title: 'ssense.com/en-in Clone',
+            title: 'Ssense',
             img: sensemen,
-            desc: 'This website was created in a span of seven days. The Tech stack used is Html CSS javascript.Various UI like slideshow,cart, payment etc are eye-catching.javascript functionality like local storage, slide show with the help of set interval etc is used.',
+            desc: 'SSENSE is a multi-brand retailer based in Montreal, Canada specialising in the sale of designer fashion and high end streetwear.',
             worked: 'This is an individual project. It was completed in 4 days',
             keyPoint2: '',
             keyPoint1: '',
@@ -122,6 +122,7 @@ const Container = styled.div`
     .imgBox>img{
         display: block;
         transition: transform .4s; 
+        width:100%;
     }
 
     // .imgBox>img:hover{
