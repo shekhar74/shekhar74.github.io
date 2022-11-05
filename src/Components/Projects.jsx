@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import dnalp from '../Resources/Images/Project/dnalp.png';
-import Gearbest from '../Resources/Images/Project/Gearbest.png';
-import sensemen from '../Resources/Images/Project/sensemen.png';
+import gearbestlp from '../Resources/Images/Project/gearbestlp.PNG';
+import senselp from '../Resources/Images/Project/senselp.png';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import StreamIcon from '@mui/icons-material/Stream';
 // import { useState } from 'react';
@@ -27,7 +27,7 @@ const Projects = () => {
         {
             id: 2,
             title: 'Gearbest',
-            img: Gearbest,
+            img: gearbestlp,
             desc: 'A lifestyle store is a retail store selling a wide variety of product categories under a single brand. It is designed to associate a brand with one or another aspirational lifestyle. Lifestyle stores may include clothing, housewares,etc.',
             worked: 'This is an individual project completed in 5 days.',
             keyPoint1: 'local json server used',
@@ -39,7 +39,7 @@ const Projects = () => {
         {
             id: 3,
             title: 'Ssense',
-            img: sensemen,
+            img: senselp,
             desc: 'SSENSE is a multi-brand retailer based in Montreal, Canada specialising in the sale of designer fashion and high end streetwear.',
             worked: 'This is an individual project. It was completed in 4 days',
             keyPoint2: '',
@@ -141,7 +141,7 @@ const Container = styled.div`
     }
 
     .ContentBox>h1{
-        color:teal;
+        color:#222e50;
     }
 
     .ContentBox>p{

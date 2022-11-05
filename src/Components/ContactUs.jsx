@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -76,12 +77,6 @@ const ContactUs = () => {
                                 <p>https://github.com/shekhar74</p>
                             </a>
                         </div>
-                        <div  data-aos='fade-right'>
-                            <EmailIcon fontSize="large"/>
-                            <h1>Email</h1>
-                            <p>You can Simply mail me just by clicking on my email</p>
-                            <a href='mailto:shekhar74suman@gmail.com' rel="noreferrer" target="_blank"><p>shekhar74suman@gmail.com</p></a>
-                        </div>
                         <div data-aos='fade-right'>
                             <LinkedInIcon fontSize="large" />
                             <h1>LinkedIn</h1>
@@ -89,6 +84,18 @@ const ContactUs = () => {
                             <a href="https://www.linkedin.com/in/shekhar81/" rel="noreferrer" target="_blank">
                                 <p>https://www.linkedin.com/in/shekhar81/</p>
                             </a>
+                        </div>
+                        <div  data-aos='fade-right'>
+                            <EmailIcon fontSize="large"/>
+                            <h1>Email</h1>
+                            <p>You can mail me </p>
+                            <a href='mailto:shekhar74suman@gmail.com' rel="noreferrer" target="_blank"><p>shekhar74suman@gmail.com</p></a>
+                        </div>
+                        <div  data-aos='fade-right'>
+                            <PhoneAndroidIcon fontSize="large"/>
+                            <h1>Mobile</h1>
+                            <p>You can contact me</p>
+                            <p style={{color:"teal"}}>+91-9501861901</p>
                         </div>
                     </div>
                 </div>

@@ -43,9 +43,9 @@ const About = () => {
                     </div>
                 </div>
             </Container>
-            <AboutMeWrapper data-aos='fade-right'>
+            {/* <AboutMeWrapper data-aos='fade-right'>
             
-                <div className='aboutSection'>
+                {/* <div className='aboutSection'>
                 
                     <div className='left'>
                     
@@ -60,8 +60,8 @@ const About = () => {
                         <h2>I am a <span>Full Stack Web Developer</span></h2>
                         <p>My name is Shekhar Suman, I am from Deoghar, Jharkhand.I am a passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.</p>
                     </div>
-                </div>
-            </AboutMeWrapper>
+                </div> 
+            </AboutMeWrapper> */}
         </div>
 
 
