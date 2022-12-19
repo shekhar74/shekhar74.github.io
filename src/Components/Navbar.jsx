@@ -36,8 +36,8 @@ const Navbar = () => {
                     <ul className="menu">
                         <li><Link activeClass="active" to="/"  onClick={() => animateScroll.scrollToTop()} spy={true} smooth={true}>Home</Link></li>
                         <li><Link activeClass="active" to="about"  onClick={() => setHead(true)} spy={true} smooth={true}>About</Link></li>
-                        <li><Link activeClass="active" to="projects" onClick={() => setHead(true)} spy={true} smooth={true}>Projects</Link></li>
                         <li><Link activeClass="active" to="skills" onClick={() => setHead(true)} spy={true} smooth={true}>Skills</Link></li>
+                        <li><Link activeClass="active" to="projects" onClick={() => setHead(true)} spy={true} smooth={true}>Projects</Link></li>
                         <li><Link activeClass="active" to="contact" onClick={() => setHead(true)} spy={true} smooth={true}>Contact Me</Link></li>
                     </ul>
                 </header>

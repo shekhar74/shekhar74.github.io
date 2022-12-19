@@ -11,8 +11,8 @@ const Homepage = () => {
         <>
             <Navbar />
             <About />
-            <Projects/>
             <Skills/>
+            <Projects/>
             <Github/>
             <ContactUs/>
         </>
