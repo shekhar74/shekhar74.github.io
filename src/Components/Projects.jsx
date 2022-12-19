@@ -3,17 +3,40 @@ import styled from 'styled-components';
 import dnalp from '../Resources/Images/Project/dnalp.png';
 import gearbestlp from '../Resources/Images/Project/gearbestlp.PNG';
 import senselp from '../Resources/Images/Project/senselp.png';
+import sugarlp from "../Resources/Images/Project/Sugarlp.PNG"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import StreamIcon from '@mui/icons-material/Stream';
-// import { useState } from 'react';
 
 
 const Projects = () => {
 
-    // const [state, setState] = useState('')
     const projects = [
         {
             id: 1,
+            title: 'Ssense',
+            img: senselp,
+            desc: 'SSENSE is a multi-brand retailer based in Montreal, Canada specialising in the sale of designer fashion and high end streetwear.',
+            worked: 'This is an individual project. It was completed in 5 days',
+            keyPoint2: '',
+            keyPoint1: '',
+            githubLink: 'https://github.com/shekhar74/naive-plot-5053',
+            deployedLink: 'https://ssense-eight.vercel.app/',
+            tags: ['HTML', 'CSS', 'Javascript']
+        },
+        {
+        id: 2,
+        title: 'CosmoStore',
+        img: sugarlp,
+        desc: "CosmoStore is one of India's fastest-growing premium cosmetic companies. The brand's bestselling goods are in the Lips, Eyes, Face, Nails & Skin categories",
+        worked: 'A collaborative project, built in 5 days by a team of 4 developers.',
+        keyPoint2: '',
+        keyPoint1: '',
+        githubLink: 'https://github.com/Deep579007/-radioactive-care-9325',
+        deployedLink: 'https://cosmo-store-pi.vercel.app/',
+        tags: ['HTML', 'CSS', 'Javascript','React','Chakra-ui']
+        },
+        {
+            id: 3,
             title: 'Dna-India',
             img: dnalp,
             desc: 'DNA India is an India-based online news website that covers all the latest and breaking news on Politics, Business, Sports, Bollywood, and Technology news.',
@@ -25,7 +48,7 @@ const Projects = () => {
             tags: ['HTML', 'CSS', 'Javascript']
         },
         {
-            id: 2,
+            id: 4,
             title: 'Gearbest',
             img: gearbestlp,
             desc: 'A lifestyle store is a retail store selling a wide variety of product categories under a single brand. It is designed to associate a brand with one or another aspirational lifestyle. Lifestyle stores may include clothing, housewares,etc.',
@@ -34,19 +57,7 @@ const Projects = () => {
             keyPoint2: '',
             githubLink: 'https://github.com/shekhar74/meek-calculator-9744',
             deployedLink: 'https://gearbestdotcom.vercel.app/',
-            tags: ['HTML', 'CSS', 'Reactjs', 'Chakra-Ui']
-        },
-        {
-            id: 3,
-            title: 'Ssense',
-            img: senselp,
-            desc: 'SSENSE is a multi-brand retailer based in Montreal, Canada specialising in the sale of designer fashion and high end streetwear.',
-            worked: 'This is an individual project. It was completed in 4 days',
-            keyPoint2: '',
-            keyPoint1: '',
-            githubLink: 'https://github.com/shekhar74/naive-plot-5053',
-            deployedLink: 'https://ssense-eight.vercel.app/',
-            tags: ['HTML', 'CSS', 'Javascript']
+            tags: ['HTML', 'CSS','Javascript', 'Reactjs', 'Chakra-Ui']
         }
     ]
 
