@@ -32,7 +32,7 @@ const Projects = () => {
         keyPoint2: '',
         keyPoint1: '',
         githubLink: 'https://github.com/Deep579007/-radioactive-care-9325',
-        deployedLink: 'https://cosmo-store-pi.vercel.app/',
+        deployedLink: 'https://cosmo-rosy.vercel.app/',
         tags: ['HTML', 'CSS', 'Javascript','React','Chakra-ui']
         },
         {
