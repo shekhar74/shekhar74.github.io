@@ -2,7 +2,10 @@
 import React,{useEffect} from 'react'
 import styled from 'styled-components';
 import GithubCalendar from 'react-github-calendar'
-import stats from "../Resources/Images/stats.png"
+// import stats from "../Resources/Images/stats.png"
+import githubstat from "../Resources/Images/github-stats.png"
+import githublang from "../Resources/Images/github-language.png"
+import githubstreak from "../Resources/Images/github-streak.png"
 import Aos from "aos";
 import "aos/dist/aos.css";
 const Github = () => {
@@ -17,7 +20,15 @@ const Github = () => {
             <Container data-aos='fade-right'>
                 <GithubCalendar username='shekhar74'year={new Date().getFullYear()} blockSize={15} blockMargin={5} fontSize={16} />
             </Container>
-            <img src={stats} alt="github stats" data-aos='fade-right' />
+            <div  data-aos='fade-right' >
+               <StatContainer>
+               <img id="github-stats-card" src={githubstat} alt="github stats" />
+               <img id="github-streak-stats" src={githubstreak} alt="github streak" />
+               </StatContainer>
+            <img  id="github-top-langs" src={githublang} alt="github language" /> 
+
+            </div>
+            {/* <img src={stats} alt="github stats" data-aos='fade-right' /> */}
         </MainContainer>
     )
 }
@@ -36,7 +47,11 @@ const Container = styled.div`
     
 `
 
-
+const StatContainer=styled.div`
+display:flex;
+width:80%;
+margin:auto;
+`
 
 const MainContainer = styled.div`
     @media (max-width: 50em){

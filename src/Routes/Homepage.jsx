@@ -8,14 +8,14 @@ import Skills from '../Components/Skills'
 
 const Homepage = () => {
     return (
-        <>
+        <div  id="home">
             <Navbar />
             <About />
             <Skills/>
             <Projects/>
             <Github/>
             <ContactUs/>
-        </>
+        </div>
     )
 }
 

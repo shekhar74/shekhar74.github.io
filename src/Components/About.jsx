@@ -14,11 +14,11 @@ const About = () => {
    })
     
     return (
-        <div id="about">
+        <div  id="about" className="about section">
             <Container>
                 <div className='aboutBox'>
                     <div className='about_leftBox'>
-                        <h1>Hi, I'm Shekhar Suman.</h1>
+                        <h1  id="user-detail-name">Hi, I'm Shekhar Suman.</h1>
                         <Typical
                        className='typical'
               loop={Infinity}
@@ -26,19 +26,19 @@ const About = () => {
               steps={["I’m a FullStack Web Developer",1000,"I Build Amazing Websites!",500]}
 
             />
-            <p>I’m a FullStack web developer. Focused on building products that will make people's lives better.I love to learn new things and I am always open to learn new technologies.</p>
+            <p  id="user-detail-intro">I’m a FullStack web developer. Focused on building products that will make people's lives better.I love to learn new things and I am always open to learn new technologies.</p>
                        <div id='resume'>
-                        <a href="https://drive.google.com/uc?export=download&id=1e9YYU1Gq6lMYG83eB70nCGR98newj81G">
+                        <a  id="resume-link-2" href="https://drive.google.com/uc?export=download&id=1e9YYU1Gq6lMYG83eB70nCGR98newj81G">
                             <button data-aos='fade-left'>Download Resume<DownloadIcon /></button>
                         </a>
-                        <a href="https://drive.google.com/file/d/1e9YYU1Gq6lMYG83eB70nCGR98newj81G/view?usp=sharing" rel="noreferrer" target="_blank">
+                        <a id="resume-link-1" href="https://drive.google.com/file/d/1e9YYU1Gq6lMYG83eB70nCGR98newj81G/view?usp=sharing" rel="noreferrer" target="_blank">
                             <button data-aos='fade-left'>View Resume<VisibilityIcon /></button>
                         </a>
                        </div>
                     </div>
                     <div className='about_rightBox'>
                         <div>
-                            <img src={myImage} alt="" width='100%' height='100%'/>
+                            <img  className="home-img" src={myImage} alt="" width='100%' height='100%'/>
                         </div>
                     </div>
                 </div>

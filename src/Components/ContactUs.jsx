@@ -73,7 +73,7 @@ const ContactUs = () => {
                             <GitHubIcon fontSize="large" />
                             <h1>Github</h1>
                             <p>Click on Link Below</p>
-                            <a href="https://github.com/shekhar74" rel="noreferrer" target="_blank">
+                            <a id="contact-github" href="https://github.com/shekhar74" rel="noreferrer" target="_blank">
                                 <p>https://github.com/shekhar74</p>
                             </a>
                         </div>
@@ -81,7 +81,7 @@ const ContactUs = () => {
                             <LinkedInIcon fontSize="large" />
                             <h1>LinkedIn</h1>
                             <p>Here is my LinkedIn Link</p>
-                            <a href="https://www.linkedin.com/in/shekhar81/" rel="noreferrer" target="_blank">
+                            <a  id="contact-linkedin" href="https://www.linkedin.com/in/shekhar81/" rel="noreferrer" target="_blank">
                                 <p>https://www.linkedin.com/in/shekhar81/</p>
                             </a>
                         </div>
@@ -89,13 +89,13 @@ const ContactUs = () => {
                             <EmailIcon fontSize="large"/>
                             <h1>Email</h1>
                             <p>You can mail me </p>
-                            <a href='mailto:shekhar74suman@gmail.com' rel="noreferrer" target="_blank"><p>shekhar74suman@gmail.com</p></a>
+                            <a  id="contact-email" href='mailto:shekhar74suman@gmail.com' rel="noreferrer" target="_blank"><p>shekhar74suman@gmail.com</p></a>
                         </div>
                         <div  data-aos='fade-right'>
                             <PhoneAndroidIcon fontSize="large"/>
                             <h1>Mobile</h1>
                             <p>You can contact me</p>
-                            <p style={{color:"teal"}}>+91-9501861901</p>
+                            <p id="contact-phone" style={{color:"teal"}}>+91-9501861901</p>
                         </div>
                     </div>
                 </div>

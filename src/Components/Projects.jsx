@@ -64,24 +64,24 @@ const Projects = () => {
     return (
         <Container id='projects'>
             <h1>Projects</h1>
-            <div className='projectsContainer' >
+            <div className='project-card'>
                 {projects.map((ele, index) => (
                     <div key={index} className="box">
                         <div className='imgBox'>
                             <img src={ele.img} alt={ele.title} width='120%' height='100%' />
                         </div>
                         <div className='ContentBox'>
-                            <h1>{ele.title}</h1>
-                            <p>{ele.desc}</p>
+                            <h1  className="project-title">{ele.title}</h1>
+                            <p className="project-description">{ele.desc}</p>
                             <p style={{ fontWeight: 'bold' }}>{ele.worked}</p>
-                            <div className='tagsBox'>
+                            <div className='project-tech-stack'>
                                 {ele.tags.map((tag, index) => (
                                     <span key={index}>{tag}</span>
                                 ))}
                             </div>
                             <div className='linkSection'>
-                                <a href={ele.githubLink} rel="noreferrer" target="_blank"><button><GitHubIcon />Github</button></a>
-                                <a href={ele.deployedLink} rel="noreferrer" target="_blank"><button><StreamIcon />Live</button></a>
+                                <a className="project-github-link" href={ele.githubLink} rel="noreferrer" target="_blank"><button><GitHubIcon />Github</button></a>
+                                <a className="project-deployed-link" href={ele.deployedLink} rel="noreferrer" target="_blank"><button><StreamIcon />Live</button></a>
                             </div>
                         </div>
                     </div>
@@ -104,7 +104,7 @@ const Container = styled.div`
         text-transform:uppercase;
     }
 
-    .projectsContainer{
+    .project-card{
         width:80%;
         margin:auto;
         display:flex;
@@ -161,7 +161,7 @@ const Container = styled.div`
         margin-top:0px;
     }
 
-    .tagsBox{
+    .project-tech-stack{
         width:80%;
         display:flex;
         align-items:center;
@@ -171,7 +171,7 @@ const Container = styled.div`
         margin-bottom:20px;
     }
 
-    .tagsBox>span{
+    .project-tech-stack>span{
         color:white;
         background-color:#222e50;
         padding: 2px 15px 2px 15px;
@@ -235,7 +235,7 @@ const Container = styled.div`
             height:100%;
         }
  
-        .projectsContainer{
+        .project-card{
             width:80%;
             margin:auto;
             
@@ -266,7 +266,7 @@ const Container = styled.div`
             font-size:15px;
         }
 
-        .tagsBox{
+        .project-tech-stack{
             width:100%;
             justify-content:center;
         }
@@ -279,7 +279,7 @@ const Container = styled.div`
            height:100%;
         }
 
-        .projectsContainer{
+        .project-card{
             width:80%;
             margin:auto;
             
@@ -311,7 +311,7 @@ const Container = styled.div`
             font-size:15px;
         }
 
-        .tagsBox{
+        .project-tech-stack{
             width:100%;
             justify-content:center;
         }
@@ -325,7 +325,7 @@ const Container = styled.div`
             height:100%;
         }
 
-        .projectsContainer{
+        .project-card{
             width:90%;
             margin:auto;
             
@@ -359,7 +359,7 @@ const Container = styled.div`
         }
 
 
-        .tagsBox{
+        .project-tech-stack{
             width:100%;
             justify-content:center;
         }
@@ -372,7 +372,7 @@ const Container = styled.div`
             height:100%;
         }
 
-        .projectsContainer{
+        .project-card{
             width:90%;
             margin:auto;
             
@@ -406,7 +406,7 @@ const Container = styled.div`
         }
 
 
-        .tagsBox{
+        .project-tech-stack{
             width:100%;
             justify-content:center;
         }

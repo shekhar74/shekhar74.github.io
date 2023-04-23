@@ -59,8 +59,8 @@ const Skills = () => {
         <div className='skillsContainer'data-aos='fade-right'>
             {skills.map((ele,index)=>(
                 <div key={index}>
-                    <img src={ele.img} alt={ele.title} width='70px' height='70px'/>
-                    <p>{ele.title}</p>
+                    <img className="skills-card-img" src={ele.img} alt={ele.title} width='70px' height='70px'/>
+                    <p className="skills-card-name">{ele.title}</p>
                 </div>
             ))}
         </div>

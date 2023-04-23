@@ -28,17 +28,19 @@ const Navbar = () => {
         }
     },[head,colorChange])
     return (
-        <Container>
+        <Container id="nav-menu">
                 <header className="header" style={{backgroundColor:`${colorChange?'white':'transparent'}`}}>
                     <a href="/" className="logo">Shekhar Suman</a>
                     <input className="menu-btn" type="checkbox" id="menu-btn" />
                     <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
-                    <ul className="menu" id="nav-menu">
-                        <li><Link activeClass="active" to="/"  id="home" onClick={() => animateScroll.scrollToTop()} spy={true} smooth={true}>Home</Link></li>
-                        <li><Link activeClass="active" to="about" id="about" class="about section"  onClick={() => setHead(true)} spy={true} smooth={true}>About</Link></li>
-                        <li><Link activeClass="active" to="skills" id="skills" onClick={() => setHead(true)} spy={true} smooth={true}>Skills</Link></li>
-                        <li><Link activeClass="active" to="projects" id="projects" onClick={() => setHead(true)} spy={true} smooth={true}>Projects</Link></li>
-                        <li><Link activeClass="active" to="contact"  id="contact" onClick={() => setHead(true)} spy={true} smooth={true}>Contact Me</Link></li>
+                    <ul className="menu" >
+                        <li><Link activeClass="active" to="/" className="nav-link home" onClick={() => animateScroll.scrollToTop()} spy={true} smooth={true}>Home</Link></li>
+                        <li><Link activeClass="active" to="about" className="nav-link about" onClick={() => setHead(true)} spy={true} smooth={true}>About</Link></li>
+                        <li><Link activeClass="active" to="skills" className="nav-link skills" onClick={() => setHead(true)} spy={true} smooth={true}>Skills</Link></li>
+                        <li><Link activeClass="active" to="projects" className="nav-link projects" onClick={() => setHead(true)} spy={true} smooth={true}>Projects</Link></li>
+                        <li><Link activeClass="active" to="contact" className="nav-link contact" onClick={() => setHead(true)} spy={true} smooth={true}>Contact Me</Link></li>
+                        <li><a  className="nav-link resume" href="https://drive.google.com/file/d/1e9YYU1Gq6lMYG83eB70nCGR98newj81G/view?usp=sharing" activeClass="active" rel="noreferrer" target="_blank">
+                            Resume </a></li>
                     </ul>
                 </header>
          </Container>
