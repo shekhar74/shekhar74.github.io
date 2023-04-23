@@ -64,9 +64,9 @@ const Projects = () => {
     return (
         <Container id='projects'>
             <h1>Projects</h1>
-            <div className='project-card'>
+            <div className='project-container'>
                 {projects.map((ele, index) => (
-                    <div key={index} className="box">
+                    <div key={index} className="project-card">
                         <div className='imgBox'>
                             <img src={ele.img} alt={ele.title} width='120%' height='100%' />
                         </div>
@@ -104,7 +104,7 @@ const Container = styled.div`
         text-transform:uppercase;
     }
 
-    .project-card{
+    .project-container{
         width:80%;
         margin:auto;
         display:flex;
@@ -112,7 +112,7 @@ const Container = styled.div`
         flex-direction:column;
     }
 
-    .box{
+    .project-card{
         position:relative;
         width:100%;
         height:450px;
@@ -229,13 +229,13 @@ const Container = styled.div`
     }
 
     @media only screen and (min-width: 768px) and (max-width:1120px){
-        .box{
+        .project-card{
             flex-direction:column;
             align-items:center;
             height:100%;
         }
  
-        .project-card{
+        .project-container{
             width:80%;
             margin:auto;
             
@@ -273,13 +273,13 @@ const Container = styled.div`
     }
 
     @media only screen and (min-width: 481px) and (max-width:768px){
-        .box{
+        .project-card{
            flex-direction:column;
            align-items:center;
            height:100%;
         }
 
-        .project-card{
+        .project-container{
             width:80%;
             margin:auto;
             
@@ -319,13 +319,13 @@ const Container = styled.div`
 
 
     @media only screen and (min-width:320px) and (max-width:480px){
-        .box{
+        .project-card{
             flex-direction:column;
             align-items:center;
             height:100%;
         }
 
-        .project-card{
+        .project-container{
             width:90%;
             margin:auto;
             
@@ -366,13 +366,13 @@ const Container = styled.div`
     }
 
     @media only screen and (max-width: 319px){
-        .box{
+        .project-card{
             flex-direction:column;
             align-items:center;
             height:100%;
         }
 
-        .project-card{
+        .project-container{
             width:90%;
             margin:auto;
             
