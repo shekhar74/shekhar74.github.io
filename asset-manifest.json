@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.73780a53.css",
-    "main.js": "/static/js/main.8457f1bd.js",
+    "main.js": "/static/js/main.1f847d9d.js",
     "static/js/787.d24240e4.chunk.js": "/static/js/787.d24240e4.chunk.js",
     "static/media/me.png": "/static/media/me.0eb8519c80b5a2c784b1.png",
     "static/media/senselp.png": "/static/media/senselp.e50a55013658deff5c21.png",
@@ -12,19 +12,20 @@
     "static/media/react.png": "/static/media/react.22d1f2096ed82cab7a8a.png",
     "static/media/mongodb.png": "/static/media/mongodb.4f7af09e6354d51beec8.png",
     "static/media/css3.png": "/static/media/css3.845e8eb63836bef093cf.png",
-    "static/media/stats.png": "/static/media/stats.3d7738568d48a4aeb85d.png",
     "static/media/git.png": "/static/media/git.b1472a80b81e487179cf.png",
     "static/media/redux.png": "/static/media/redux.7fec6369cecd1cbd44d6.png",
+    "static/media/github-stats.png": "/static/media/github-stats.b2b285ad43fd6196ff16.png",
     "static/media/nodejs.png": "/static/media/nodejs.b508473ad71a31ce2fae.png",
+    "static/media/github-streak.png": "/static/media/github-streak.af1f9f24ad71ae7165cd.png",
     "static/media/html5.png": "/static/media/html5.4e6edfe05f07c383e94f.png",
     "static/media/js.png": "/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/index.html",
     "main.73780a53.css.map": "/static/css/main.73780a53.css.map",
-    "main.8457f1bd.js.map": "/static/js/main.8457f1bd.js.map",
+    "main.1f847d9d.js.map": "/static/js/main.1f847d9d.js.map",
     "787.d24240e4.chunk.js.map": "/static/js/787.d24240e4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.73780a53.css",
-    "static/js/main.8457f1bd.js"
+    "static/js/main.1f847d9d.js"
   ]
 }
