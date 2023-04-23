@@ -33,12 +33,12 @@ const Navbar = () => {
                     <a href="/" className="logo">Shekhar Suman</a>
                     <input className="menu-btn" type="checkbox" id="menu-btn" />
                     <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
-                    <ul className="menu">
-                        <li><Link activeClass="active" to="/"  onClick={() => animateScroll.scrollToTop()} spy={true} smooth={true}>Home</Link></li>
-                        <li><Link activeClass="active" to="about"  onClick={() => setHead(true)} spy={true} smooth={true}>About</Link></li>
-                        <li><Link activeClass="active" to="skills" onClick={() => setHead(true)} spy={true} smooth={true}>Skills</Link></li>
-                        <li><Link activeClass="active" to="projects" onClick={() => setHead(true)} spy={true} smooth={true}>Projects</Link></li>
-                        <li><Link activeClass="active" to="contact" onClick={() => setHead(true)} spy={true} smooth={true}>Contact Me</Link></li>
+                    <ul className="menu" id="nav-menu">
+                        <li><Link activeClass="active" to="/"  id="home" onClick={() => animateScroll.scrollToTop()} spy={true} smooth={true}>Home</Link></li>
+                        <li><Link activeClass="active" to="about" id="about" class="about section"  onClick={() => setHead(true)} spy={true} smooth={true}>About</Link></li>
+                        <li><Link activeClass="active" to="skills" id="skills" onClick={() => setHead(true)} spy={true} smooth={true}>Skills</Link></li>
+                        <li><Link activeClass="active" to="projects" id="projects" onClick={() => setHead(true)} spy={true} smooth={true}>Projects</Link></li>
+                        <li><Link activeClass="active" to="contact"  id="contact" onClick={() => setHead(true)} spy={true} smooth={true}>Contact Me</Link></li>
                     </ul>
                 </header>
          </Container>
