@@ -39,8 +39,8 @@ const Navbar = () => {
                         <li><Link activeClass="active" to="skills" className="nav-link skills" onClick={() => setHead(true)} spy={true} smooth={true}>Skills</Link></li>
                         <li><Link activeClass="active" to="projects" className="nav-link projects" onClick={() => setHead(true)} spy={true} smooth={true}>Projects</Link></li>
                         <li><Link activeClass="active" to="contact" className="nav-link contact" onClick={() => setHead(true)} spy={true} smooth={true}>Contact Me</Link></li>
-                        <li id="resume-button-1"><a id="resume-link-1" className="nav-link resume" href="https://drive.google.com/uc?export=download&id=1e9YYU1Gq6lMYG83eB70nCGR98newj81G" activeClass="active" rel="noreferrer" target="_blank">
-                            Resume</a></li>
+                        <a activeClass="active" id="resume-link-1" className="nav-link resume" href="https://drive.google.com/uc?export=download&id=1e9YYU1Gq6lMYG83eB70nCGR98newj81G" rel="noreferrer" target="_blank">
+                        <li id="resume-button-1">Resume</li></a>
                     </ul>
                 </header>
          </Container>
@@ -79,6 +79,13 @@ const Container = styled.div`
         padding: 20px 25px;
         text-decoration: none;
     }
+
+    #resume-link-1{
+        display: block;
+        padding: 20px 25px;
+        text-decoration: none;
+    }    
+
     
     .header .logo {
         display: flex;
@@ -110,6 +117,10 @@ const Container = styled.div`
         cursor:pointer;
     }
     
+    #resume-link-1:hover{
+        color:green;
+        cursor:pointer;
+    }
     
     /* menu icon */
     
@@ -186,8 +197,16 @@ const Container = styled.div`
         .header li {
             float: left;
         }
+
+        #resume-link-1{
+            float: left;
+        }
         
         .header li a {
+            padding: 20px 30px;
+        }
+
+        #resume-link-1{
             padding: 20px 30px;
         }
 

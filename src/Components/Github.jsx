@@ -21,8 +21,8 @@ const Github = () => {
                <StatContainer>
                <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=shekhar74&show_icons=true&theme=dark" alt="github stats" />
                <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=shekhar74&theme=dark" alt="github streak" />
-               </StatContainer>
             <img  id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs?username=shekhar74&show_icons=true&theme=dark&locale=en&layout=compact" alt="github language" /> 
+               </StatContainer>
 
             </div>
             {/* <img src={stats} alt="github stats" data-aos='fade-right' /> */}
@@ -44,9 +44,9 @@ const Container = styled.div`
     
 `
 
+
 const StatContainer=styled.div`
-display:flex;
-width:60%;
+width:100%;
 margin:auto;
 `
 
@@ -55,5 +55,6 @@ const MainContainer = styled.div`
         display:none;
     }
 `
+
 
 export default Github

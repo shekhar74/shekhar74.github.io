@@ -37,6 +37,8 @@ const About = () => {
               <a
                 id="resume-link-2"
                 href="https://drive.google.com/uc?export=download&id=1e9YYU1Gq6lMYG83eB70nCGR98newj81G"
+                rel="noreferrer"
+                target="_blank"
               >
                 <button id="resume-button-2" data-aos="fade-left">
                   Download Resume
@@ -89,9 +91,9 @@ const About = () => {
             </h2>
             <p id="user-detail-intro">
               My name is Shekhar Suman, I am from Deoghar, Jharkhand.I am
-              skilled in React,Nodejs,Express and MongoDB and always thrives to
-              work on end to end products which develop sustainable and scalable
-              social and technical systems to create impact.
+              skilled in React, Node, Express and MongoDB and always thrives to
+              work on end to end products which develop sustainable, scalable
+              and technical systems to create impact.
             </p>
           </div>
         </div>
