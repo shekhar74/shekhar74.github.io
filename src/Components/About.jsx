@@ -34,18 +34,11 @@ const About = () => {
               learn new things and I am always open to learn new technologies.
             </p>
             <div id="resume">
-              {/* <a
-                id="resume-link-2"
-                href="https://drive.google.com/uc?export=download&id=1e9YYU1Gq6lMYG83eB70nCGR98newj81G"
-                rel="noreferrer"
-                target="_blank"
-              > */}
                 <button onClick={handleclick} id="resume-button-2" data-aos="fade-left">
-                  Download Resume
+                Resume
                   <DownloadIcon />
                 </button>
-              {/* </a> */}
-              <a
+              {/* <a
                 href="https://drive.google.com/file/d/1e9YYU1Gq6lMYG83eB70nCGR98newj81G/view?usp=sharing"
                 rel="noreferrer"
                 target="_blank"
@@ -54,7 +47,7 @@ const About = () => {
                   View Resume
                   <VisibilityIcon />
                 </button>
-              </a>
+              </a> */}
             </div>
           </div>
           <div className="about_rightBox">
