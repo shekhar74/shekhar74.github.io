@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import React, { useEffect, useState } from 'react'
 import {Link,animateScroll} from 'react-scroll';
+import handleclick from './handleclick';
 
 
 
@@ -39,8 +40,7 @@ const Navbar = () => {
                         <li><Link activeClass="active" to="skills" className="nav-link skills" onClick={() => setHead(true)} spy={true} smooth={true}>Skills</Link></li>
                         <li><Link activeClass="active" to="projects" className="nav-link projects" onClick={() => setHead(true)} spy={true} smooth={true}>Projects</Link></li>
                         <li><Link activeClass="active" to="contact" className="nav-link contact" onClick={() => setHead(true)} spy={true} smooth={true}>Contact Me</Link></li>
-                        <a activeClass="active" id="resume-link-1" className="nav-link resume" href="https://drive.google.com/uc?export=download&id=1e9YYU1Gq6lMYG83eB70nCGR98newj81G" rel="noreferrer" target="_blank">
-                        <li id="resume-button-1">Resume</li></a>
+                        <li onClick={handleclick} id="resume-button-1">Resume</li>
                     </ul>
                 </header>
          </Container>
@@ -80,7 +80,7 @@ const Container = styled.div`
         text-decoration: none;
     }
 
-    #resume-link-1{
+    #resume-button-1{
         display: block;
         padding: 20px 25px;
         text-decoration: none;
@@ -117,7 +117,7 @@ const Container = styled.div`
         cursor:pointer;
     }
     
-    #resume-link-1:hover{
+    #resume-button-1:hover{
         color:green;
         cursor:pointer;
     }
@@ -198,7 +198,7 @@ const Container = styled.div`
             float: left;
         }
 
-        #resume-link-1{
+        #resume-button-1{
             float: left;
         }
         
@@ -206,7 +206,7 @@ const Container = styled.div`
             padding: 20px 30px;
         }
 
-        #resume-link-1{
+        #resume-button-1{
             padding: 20px 30px;
         }
 

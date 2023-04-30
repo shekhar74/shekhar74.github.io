@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import styled from "styled-components";
 import myImage from "../Resources/Images/me.png";
 import backgroundImage from "../Resources/Images/background.webp";
-
+import handleclick from "./handleclick";
 import Typical from "react-typical";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -34,17 +34,17 @@ const About = () => {
               learn new things and I am always open to learn new technologies.
             </p>
             <div id="resume">
-              <a
+              {/* <a
                 id="resume-link-2"
                 href="https://drive.google.com/uc?export=download&id=1e9YYU1Gq6lMYG83eB70nCGR98newj81G"
                 rel="noreferrer"
                 target="_blank"
-              >
-                <button id="resume-button-2" data-aos="fade-left">
+              > */}
+                <button onClick={handleclick} id="resume-button-2" data-aos="fade-left">
                   Download Resume
                   <DownloadIcon />
                 </button>
-              </a>
+              {/* </a> */}
               <a
                 href="https://drive.google.com/file/d/1e9YYU1Gq6lMYG83eB70nCGR98newj81G/view?usp=sharing"
                 rel="noreferrer"
